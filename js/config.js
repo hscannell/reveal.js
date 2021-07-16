@@ -5,11 +5,12 @@ export default {
 
 	// The "normal" size of the presentation, aspect ratio will be preserved
 	// when the presentation is scaled to fit different resolutions
-	width: 960,
-	height: 700,
-
+	width: 1680,
+	height: 1050,
+	// Hillary's mac 1680x1050 
+	
 	// Factor of the display size that should remain empty around the content
-	margin: 0.04,
+	margin: 0.02,
 
 	// Bounds for smallest/largest possible scale to apply to content
 	minScale: 0.2,
@@ -46,7 +47,7 @@ export default {
 	// number for the current slide. The function should take in a slide
 	// object and return an array with one string [slideNumber] or
 	// three strings [n1,delimiter,n2]. See #formatSlideNumber().
-	slideNumber: 'c/t',
+	slideNumber: 'true',
 
 	// Can be used to limit the contexts in which the slide number appears
 	// - "all":      Always show the slide number
@@ -56,17 +57,17 @@ export default {
 
 	// Use 1 based indexing for # links to match slide number (default is zero
 	// based)
-	hashOneBasedIndex: false,
+	hashOneBasedIndex: true,
 
 	// Add the current slide number to the URL hash so that reloading the
 	// page/copying the URL will return you to the same slide
-	hash: false,
+	hash: true,
 
 	// Flags if we should monitor the hash and change slides accordingly
 	respondToHashChanges: true,
 
 	// Push each slide change to the browser history.  Implies `hash: true`
-	history: false,
+	history: true,
 
 	// Enable keyboard shortcuts for navigation
 	keyboard: true,
@@ -79,7 +80,7 @@ export default {
 
 	// Disables the default reveal.js slide layout (scaling and centering)
 	// so that you can use custom CSS layout
-	disableLayout: false,
+	disableLayout: true,
 
 	// Enable the slide overview mode
 	overview: true,
@@ -229,13 +230,13 @@ export default {
 	focusBodyOnPageVisibilityChange: true,
 
 	// Transition style
-	transition: 'slide', // none/fade/slide/convex/concave/zoom
+	transition: 'none', // none/fade/slide/convex/concave/zoom
 
 	// Transition speed
 	transitionSpeed: 'default', // default/fast/slow
 
 	// Transition style for full page slide backgrounds
-	backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+	backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
 
 	// Parallax background image
 	parallaxBackgroundImage: '', // CSS syntax, e.g. "a.jpg"
